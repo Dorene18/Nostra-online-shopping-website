@@ -45,19 +45,7 @@ This project is designed with a **mobile-first** approach and adapts to various 
 ---
 
 ## 🔗 Live Demo
-
-> [Click here to view the live demo](#) *(Add your GitHub Pages / Netlify / Vercel deployment link here)*
-
----
-
-## 📬 Contact
-
-**Created by [Your Name]**  
-- 🌐 [Portfolio](#)
-- 📧 [Email](mailto:your@email.com)
-- 🐦 [Twitter](https://twitter.com/yourhandle)
-- 💼 [LinkedIn](https://linkedin.com/in/yourhandle)
-
+https://dorene18.github.io/Nostra-online-shopping-website/
 ---
 
 ## ⭐ Acknowledgements
