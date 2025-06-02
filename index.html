@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="stycle.css">
+</head>
+<body>
+    <!--TOP BANNER-->
+    <div class="top-banner">
+        <p>Sign Up and <strong>GET 20% OFF</strong> for your first Order</p>
+    <span class="close-banner" onclick="closeBanner()">×</span>
+    </div>
+    <!--navigation bar-->
+     <nav class="navbar">
+    <div class="logo">Nostra</div>
+    <ul class="nav-links">
+      <li><a href="index.html" onclick="stayHere()">Home</a></li>
+      <li><a href="#new-arrivals">New Arrival</a></li>
+      <li><a href="#most-wanted" id="show-most-wanted">Most Wanted</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <!---homescreen-->
+   <div class="carousel">
+    <img src="./images/homescreen.jpeg" class="active" alt="Slide 1">
+    <img src="./images/h2 (1).jpeg" alt="Slide 2">
+    <img src="./images/h3.jpeg" alt="Slide 3">
+
+    <!-- Text overlay -->
+    <div class="carousel-text">
+      <h1>Level up your style with our</h1>
+      <p>Summer Collections</p>
+      <button>Shop Now</button>
+    </div>
+
+    <!-- Navigation arrows -->
+    <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+    <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+  </div>
+  <!-- Brands Section -->
+<section class="brands">
+  <h2>Brands</h2>
+  <div class="brand-logos">
+    <div class="brand"><img src="./images/nike.png" alt="Nike"><p>Nike</p></div>
+    <div class="brand"><img src="./images/zara.webp" alt="Zara"><p>Zara</p></div>
+    <div class="brand"><img src="./images/allensolly.png" alt="Allen Solly"><p>Allen solly</p></div>
+    <div class="brand"><img src="./images/puma.png" alt="Puma"><p>Puma</p></div>
+    <div class="brand"><img src="./images/xl.png" alt="Louis Vuitton"><p>Louis Vuitton</p></div>
+    <div class="brand"><img src="./images/gucci.png" alt="Gucci"><p>Gucci</p></div>
+    <div class="brand"><img src="./images/b.png" alt="Behance"><p>Behance</p></div>
+  </div>
+</section>
+
+<!-- Customer Experience Section -->
+<section class="customer-experience">
+  <div class="experience-heading">
+    <h2>We Provide Best <br><strong>Customer Experiences</strong></h2>
+    <p>|| We ensure that our customer have the best shopping experience</p>
+  </div>
+  <div class="features">
+    <div class="feature">
+      <i class="icon">✔️</i>
+      <h4>Original Products</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+    </div>
+    <div class="feature">
+      <i class="icon">😊</i>
+      <h4>Satisfaction Guarantee</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+    </div>
+    <div class="feature">
+      <i class="icon">🧹</i>
+      <h4>New Arrival Everyday</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+    </div>
+    <div class="feature">
+      <i class="icon">🚚</i>
+      <h4>Fast & Free Shipping</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+    </div>
+  </div>
+</section>
+ <section id="new-arrivals" class="new-arrivals">
+    <h2>New Arrivals</h2>
+    <div class="arrivals-grid">
+      <div class="product-card">
+        <img src="./images/1arrival.jpg" alt="Product 1" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/2arrival.jpg" alt="Product 2" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/3arrival.jpg" alt="Product 3" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/4arrival.jpg" alt="Product 4" />
+        <button>Shop Now →</button>
+      </div>
+    </div>
+  </section>
+   <!-- Most Wanted -->
+  <section id="most-wanted" class="most-wanted">
+     <h2>Most Wanted</h2>
+    <div class="product-grid">
+      <!-- Sample products -->
+      <div class="product-card">
+        <span class="sale-badge">sale</span>
+        <img src="./images/8r.jpg" alt="Product 1"/>
+      </div>
+      <div class="product-card">
+        <span class="sale-badge">sale</span>
+        <img src="./images/7r.jpg" alt="Product 2"/>
+      </div>
+      <div class="product-card">
+        <span class="sale-badge">sale</span>
+        <img src="./images/6r.jpg" alt="Product 3"/>
+      </div>
+      <div class="product-card">
+        <span class="sale-badge">sale</span>
+        <img src="./images/5ar.jpg" alt="Product 4"/>
+      </div>
+      <div class="product-card">
+        <span class="sale-badge">sale</span>
+        <img src="./images/4arrival.jpg" alt="Product 5"/>
+      </div>
+      <div class="product-card">
+        <span class="sale-badge">sale</span>
+        <img src="./images/8r.jpg" alt="Product 1"/>
+      </div>
+      <div class="product-card">
+        <span class="sale-badge">sale</span>
+        <img src="./images/7r.jpg" alt="Product 2"/>
+      </div>
+      <div class="product-card">
+        <span class="sale-badge">sale</span>
+        <img src="./images/6r.jpg" alt="Product 3"/>
+      </div>
+      <div class="product-card">
+        <span class="sale-badge">sale</span>
+        <img src="./images/8r.jpg" alt="Product 1"/>
+      </div>
+      <div class="product-card">
+        <span class="sale-badge">sale</span>
+        <img src="./images/7r.jpg" alt="Product 2"/>
+      </div>
+      <div class="product-card">
+        <span class="sale-badge">sale</span>
+        <img src="./images/6r.jpg" alt="Product 3"/>
+      </div>
+      <div class="product-card">
+        <span class="sale-badge">sale</span>
+        <img src="./images/5ar.jpg" alt="Product 4"/>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="offer-section">
+    <div class="offer-image">
+      <img src="./images/offer.jpg" alt="Clothing Store Promo" />
+    </div>
+    <div class="offer-text">
+      <h2>Limited Offer</h2>
+      <p>35% OFF on this for the first 30 Customers</p>
+      <button class="shop-btn" onclick="shopNow()">Shop Now →</button>
+    </div>
+  </section>
+   <section class="text-center">
+      <h1 class="text-center__h "><strong>OUR NEWS LETTER</strong></h1>
+      <p class=" text-center__p ">Signup for our email newspaper to givce exlusice discounts,updates and more</p>
+      <input type="text" class="box" >
+      <br>
+      <button class="btnsub">Subsciption</button>
+    </section>
+    <!----footer--->
+    <section class="footer">
+      <h1 class="footer__h">NOSTRA</h1>
+      <p >The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+<p>@ 2023 nostra.com</p>
+    </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

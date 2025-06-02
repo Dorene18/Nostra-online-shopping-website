@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collections</title>
+    <styLe>
+        .top-banner {
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.top-banner strong {
+  color: #ffd700;
+}
+
+.close-banner {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: black;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
+        .collections__h{
+            text-align: center;
+        }
+        .collections__collect{
+             border: solid black 2px;
+        margin: 3px;
+         width: 50%;
+  max-width: 500px;
+  padding: 10px 15px;
+  margin-left: 450px;
+        margin-top: 20px;
+        
+        }
+        .arrivals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.text-center{
+        text-align: center;
+        margin-top: 20px;
+        padding:100px ;
+    }
+    .text-center__h{
+        font-style: bold;
+        font-size: 60px;
+        margin-top: 40px;
+    }  
+    .text-center__p{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .box{
+        border: solid black 2px;
+        padding: 2px;
+        margin: 3px;
+        width: 80%;
+        height: 40%;
+        margin-top: 20px;
+    }
+    .btnsub{
+        background-color: #222;
+        color: white;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 10px;
+        text-decoration: underline;
+    }
+    .footer{
+        background-color: #333;
+        color: white;
+        padding: 50px;
+        gap: 5;
+        margin-top: 20px;
+    }
+    .footer__h{
+       font-size: 70px;
+       font-style: bold;
+    }
+
+
+
+   
+
+    </styLe>
+</head>
+<body>
+     <!--TOP BANNER-->
+    <div class="top-banner">
+        <p>Sign Up and <strong>GET 20% OFF</strong> for your first Order</p>
+    <span class="close-banner" onclick="closeBanner()">×</span>
+    </div>
+    <!--navigation bar-->
+     <nav class="navbar">
+    <div class="logo">Nostra</div>
+    <ul class="nav-links">
+      <li><a href="index.html" onclick="stayHere()">Home</a></li>
+      <li><a href="#new-arrivals">New Arrival</a></li>
+      <li><a href="#most-wanted" id="show-most-wanted">Most Wanted</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+    <div class="collections">
+         <h1 class="collections__h "><strong>PRODUCTS</strong></h1>
+       <input type="text" class="collections__collect" placeholder="Search for products..." >
+       <br>
+       <div class="arrivals-grid">
+      <div class="product-card">
+        <img src="./images/1arrival.jpg" alt="Product 1" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/2arrival.jpg" alt="Product 2" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/3arrival.jpg" alt="Product 3" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/4arrival.jpg" alt="Product 4" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/1arrival.jpg" alt="Product 1" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/2arrival.jpg" alt="Product 2" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/3arrival.jpg" alt="Product 3" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/4arrival.jpg" alt="Product 4" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/1arrival.jpg" alt="Product 1" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/2arrival.jpg" alt="Product 2" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/3arrival.jpg" alt="Product 3" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/4arrival.jpg" alt="Product 4" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/1arrival.jpg" alt="Product 1" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/2arrival.jpg" alt="Product 2" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/3arrival.jpg" alt="Product 3" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/4arrival.jpg" alt="Product 4" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/1arrival.jpg" alt="Product 1" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/2arrival.jpg" alt="Product 2" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/3arrival.jpg" alt="Product 3" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/4arrival.jpg" alt="Product 4" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/1arrival.jpg" alt="Product 1" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/2arrival.jpg" alt="Product 2" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/3arrival.jpg" alt="Product 3" />
+        <button>Shop Now →</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/4arrival.jpg" alt="Product 4" />
+        <button>Shop Now →</button>
+      </div>
+    </div>
+    </div>
+    <section class="text-center">
+      <h1 class="text-center__h "><strong>OUR NEWS LETTER</strong></h1>
+      <p class=" text-center__p ">Signup for our email newspaper to givce exlusice discounts,updates and more</p>
+      <input type="text" class="box" >
+      <br>
+      <button class="btnsub">Subsciption</button>
+    </section>
+    <!----footer--->
+    <section class="footer">
+      <h1 class="footer__h">NOSTRA</h1>
+      <p >The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+<p>@ 2023 nostra.com</p>
+    </section>
+</body>
+</html>
